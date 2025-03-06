@@ -1,12 +1,8 @@
-Here's a **very impressive and professional `README.md`** for your portfolio project built with **React**, **Tailwind CSS**, featuring **responsive design**, and deployed at **www.abc.com**:
-
----
-
 # 🚀 Personal Portfolio  
 
 Welcome to my **Personal Portfolio** – a showcase of my skills, projects, and experience as a full-stack developer. Designed with performance, responsiveness, and modern aesthetics in mind, this portfolio reflects not only my technical expertise but also my passion for creating seamless user experiences.  
 
-🌐 **Live Demo:** [www.abc.com](http://www.abc.com)  
+🌐 **Live Demo:** [www.mohitrauniyar.com.np](http://www.mohitrauniyar.com.np)  
 
 ---
 
@@ -28,7 +24,7 @@ Lightweight and optimized for fast load times and smooth transitions.
 Structured with maintainability in mind, making it easy to scale or extend in the future.  
 
 🚀 **Deployed & Live**  
-Live and production-ready at: [www.abc.com](http://www.abc.com)  
+Live and production-ready at: [www.mohitrauniyar.com.np](http://www.mohitrauniyar.com.np)  
 
 ---
 
@@ -64,7 +60,7 @@ src/
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/mohitRauniyar/portfolio.git
    cd portfolio
    ```
 
@@ -86,9 +82,9 @@ src/
 
 If you'd like to collaborate or have any feedback, feel free to reach out:  
 
-- 📧 Email: your.email@example.com  
-- 💼 LinkedIn: [linkedin.com/in/yourname](https://linkedin.com/in/yourname)  
-- 🐙 GitHub: [github.com/your-username](https://github.com/your-username)  
+- 📧 Email: learning.mohitrauniyar.01@gmail.com  
+- 💼 LinkedIn: [linkedin.com/in/mohit-kumar-rauniyar-984537291/](https://www.linkedin.com/in/mohit-kumar-rauniyar-984537291/)  
+- 🐙 GitHub: [github.com/mohitRauniyar](https://github.com/mohitRauniyar)  
 
 ---
 
@@ -115,11 +111,6 @@ If you'd like to collaborate or have any feedback, feel free to reach out:
 ✅ Live, production-ready build.  
 ✅ A perfect place to share my journey, skills, and projects with the world.  
 
----
-
-## 📝 License  
-
-This project is **open-source** and available under the [MIT License](LICENSE).  
 
 ---
 
