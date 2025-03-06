@@ -1,0 +1,27 @@
+/* App.css */
+
+.app-background {
+  background-color: #000000; /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .sticky {
+    transform: translateZ(0); /* Fix for Safari sticky bug */
+    will-change: transform;
+  }
+}
