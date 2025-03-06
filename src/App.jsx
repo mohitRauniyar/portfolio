@@ -34,7 +34,7 @@ const App = () => {
   return (
     <ThemeProvider class='dark'>
 
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path='/' element={
           <StyledApp isLoading={[isLoading]}>
