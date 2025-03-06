@@ -92,8 +92,8 @@ If you'd like to collaborate or have any feedback, feel free to reach out:
 
 - **React.js** – For the amazing frontend library.  
 - **Tailwind CSS** – For making styling fast and efficient.  
-- **Flowbite** (optional) – If you used it for components.  
-- **[Your Deployment Platform]** – For seamless deployment.  
+- **uiverse.io**  –  For components.  
+- **Cloudlare** – For DNS resolution.
 
 ---
 
