@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -16,36 +17,36 @@ export default function Footer() {
           <h3 className="text-[#5c6456] font-bold">CRAFT</h3>
           <ul className="dark:text-[#969c91] text-[#222] flex flex-col gap-4">
             <li className="">
-              <a
-                href="/project/infosys"
+              <Link
+                to="/project/infosys"
                 className="text-lg hover:underline-offset-2 hover:underline font-semibold"
               >
                 No More Disconnected Dots
-              </a>
+              </Link>
             </li>
             <li className="">
-              <a
-                href="/project/edip"
+              <Link
+                to="/project/edip"
                 className="text-lg hover:underline-offset-2 hover:underline font-semibold"
               >
                 Bridging The Gap
-              </a>
+              </Link>
             </li>
             <li className="">
-              <a
-                href=""
+              <Link
+                to=""
                 className="text-lg hover:underline-offset-2 hover:underline font-semibold"
               >
                 No More Disconnected Dots
-              </a>
+              </Link>
             </li>
             <li className="">
-              <a
-                href=""
+              <Link
+                to=""
                 className="text-lg hover:underline-offset-2 hover:underline font-semibold"
               >
                 No More Disconnected Dots
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
