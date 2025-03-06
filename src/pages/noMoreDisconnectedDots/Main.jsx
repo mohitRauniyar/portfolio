@@ -5,7 +5,6 @@ import Banner from "../../components/Banner";
 import ParticipationDetail from "../../components/ParticipationDetail";
 import Footer from "../../components/Footer"
 import { FaListAlt } from "react-icons/fa";
-import FeedbackImg from "../assets/noMoreDisconnectedDots/course_feedback.png"
 
 export default function Main() {
   return (
