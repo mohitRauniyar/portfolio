@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectTitle from "./ProjectTitle";
 import Technology from "./Technology";
+import { Link } from "react-router-dom";
 export default function Projects() {
   return (
     <div className="flex flex-col" id='craft'>
@@ -23,12 +24,12 @@ export default function Projects() {
                   "MVC model",
                 ]}
               />
-              <a
+              <Link
                 href="/project/infosys"
                 className="dark:bg-white bg-black p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
-              </a>
+              </Link>
             </div>
             <img src="assets/noMoreDisconnectedDots/course_assignment.png" alt="" loading="lazy" className="lg:w-[55%] "/>
           </div>
@@ -47,12 +48,12 @@ export default function Projects() {
                   "Agile Process",
                 ]}
               />
-              <a
+              <Link
                 href="/project/edip"
                 className="bg-black dark:bg-white p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -69,12 +70,12 @@ export default function Projects() {
                   "MVC model",
                 ]}
               />
-              <a
+              <Link
                 href=""
                 className="bg-black dark:bg-white p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
-              </a>
+              </Link>
             </div>
             <img src="assets/noMoreDisconnectedDots/course_assignment.png" alt="" loading="lazy" className="lg:w-[55%] "/>
           </div>
