@@ -15,7 +15,7 @@ export default function Main() {
           <div className="flex flex-col">
 
 
-            <Banner imageLink="`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_assignment.png`}" altText="Website Image"/>
+            <Banner imageLink="assets/noMoreDisconnectedDots/course_assignment.png" altText="Website Image"/>
 
 
 

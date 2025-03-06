@@ -6,7 +6,7 @@ export default function Banner({imageLink, altText}) {
       <div className="flex flex-col justify-center">
         <div className="rounded-xl border-5 border-black dark:border-[#777777] flex justify-center bg-black px-2 py-4 shadow-2xl shadow-[#363636d0] dark:shadow-[#201e1e]">
           <img
-            src={imageLink}
+            src={`${import.meta.env.BASE_URL}${imageLink}`}
             alt={altText}
             className="object-contain rounded-sm"
           />
