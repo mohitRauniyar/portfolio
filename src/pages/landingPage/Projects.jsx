@@ -25,7 +25,7 @@ export default function Projects() {
                 ]}
               />
               <Link
-                href="/project/infosys"
+                to="/project/infosys"
                 className="dark:bg-white bg-black p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
@@ -49,7 +49,7 @@ export default function Projects() {
                 ]}
               />
               <Link
-                href="/project/edip"
+                to="/project/edip"
                 className="bg-black dark:bg-white p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
@@ -71,7 +71,7 @@ export default function Projects() {
                 ]}
               />
               <Link
-                href=""
+                to=""
                 className="bg-black dark:bg-white p-3 rounded-sm text-white dark:text-black font-bold w-fit lg:text-xl text-sm hover:bg-black hover:text-white"
               >
                 Read More
