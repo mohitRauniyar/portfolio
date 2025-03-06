@@ -15,7 +15,7 @@ export default function Main() {
           <div className="flex flex-col">
 
 
-            <Banner imageLink="/assets/noMoreDisconnectedDots/course_assignment.png" altText="Website Image"/>
+            <Banner imageLink="`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_assignment.png`}" altText="Website Image"/>
 
 
 
@@ -149,12 +149,12 @@ export default function Main() {
                     <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8'>Managers can request training for employees based on project requirements.</p>
                   </div>
                   <div className="">
-                    <img src="assets/noMoreDisconnectedDots/course_feedback.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
+                    <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_feedback.png`} alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
                   </div>
                 </div>
                 <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
                   <div className="">
-                    <img src="assets/noMoreDisconnectedDots/course_assignment.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
+                    <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_assignment.png`} alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
                   </div>
                   <div className="">
                     <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">Modular Course Creation</h2>
@@ -167,12 +167,12 @@ export default function Main() {
                     <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8'>Employees can view the courses assigned to them, complete the modules and track their progress.</p>
                   </div>
                   <div className="">
-                    <img src="assets/noMoreDisconnectedDots/course_dashboard.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
+                    <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_dashboard.png`} alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
                   </div>
                 </div>
                 <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
                   <div className="">
-                    <img src="assets/noMoreDisconnectedDots/course_feedback_submission.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
+                    <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_feedback_submission.png`} alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
                   </div>
                   <div className="">
                     <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">Feedback Oriented</h2>
@@ -185,7 +185,7 @@ export default function Main() {
                     <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8'>Employees and admins can easliy monitor course completion.</p>
                   </div>
                   <div className="">
-                    <img src="assets/noMoreDisconnectedDots/course_feedback.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
+                    <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/course_feedback.png`} alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/>
                   </div>
                 </div>
                 <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
@@ -217,10 +217,10 @@ export default function Main() {
                 <p className='text-md md:text-xl font-semibold text-black dark:text-white py-8'>Backend Design</p>
                 <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">MySQL Database</h2>
                 <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center'>To get a better understanding of database design, entities were defined and class diagrams were made for the entities and the service interfaces which i later changed into an ER Diagram.</p>
-                <img src="assets/noMoreDisconnectedDots/erDiagram.png" alt=""  className="w-full my-16"/>
+                <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/erDiagram.png`} alt=""  className="w-full my-16"/>
                 <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">Spring Boot Framework</h2>
                 <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center'> Ensures a secure, fast, and scalable backend. I designed the class diagrams for servuce interfaces that needed to be implemented.</p>
-                <img src="assets/noMoreDisconnectedDots/interface_design.png" alt="" className="w-full my-16" />
+                <img src={`${import.meta.env.BASE_URL}assets/noMoreDisconnectedDots/interface_design.png`} alt="" className="w-full my-16" />
                 <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">MVC Design Pattern</h2>
                 <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center'>The MVC (Model-View-Controller) design pattern breaks an application into three parts: the Model (which handles data), the View (which is what users see), and the Controller (which connects the two). This makes it easier to work on each part separately, so you can update or fix things without messing up the whole app.  MVC helps keep everything organized and improves the quality of the software.</p>
                 <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-32 my-8 mt-32 flex items-center'> A Role-based Access Control was added with three different roles: Admin, Manager and, Employee.</p>
