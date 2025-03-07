@@ -8,15 +8,15 @@ export default function LandingPage() {
   return (
     <>
       <Nav/>
-        <SideNav/>
-      
-        <div className="md:pl-20 flex flex-col w-full">
-          <Hero/>
-          <div className="flex justify-center w-full">
-          <Content/>
-          </div>
-          
+      <SideNav/>
+    
+      <div className="md:pl-20 flex flex-col w-full">
+        <Hero/>
+        <div className="flex justify-center w-full">
+        <Content/>
         </div>
+        
+      </div>
         
     </>
   )

@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/noMoreDisconnectedDots/Main";
 import Edip from "./pages/bridgingTheGaps/Edip";
 import { ThemeContext, ThemeProvider } from "../ThemeContext";
+import About from "./pages/About/About";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +52,7 @@ const App = () => {
               </StyledApp>
             }
           />
+          <Route path="/about" element={<About/>} />
           <Route path="/project/infosys" element={<Main />} />
           <Route path="/project/edip" element={<Edip />} />
         </Routes>
