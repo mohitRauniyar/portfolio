@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -21,13 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Configure Git
+      - name: Configure git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Build project
+        run: npm run build
+
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm run deploy -- -u "github-actions[bot] <github-actions[bot]@users.noreply.github.com>" -r "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+        run: npx gh-pages -d dist -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
