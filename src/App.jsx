@@ -5,24 +5,26 @@ import "./App.css";
 import styled from "styled-components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./pages/noMoreDisconnectedDots/Main";
-import Edip from "./pages/bridgingTheGaps/Edip"
-import {ThemeContext, ThemeProvider } from "../ThemeContext";
-
+import Edip from "./pages/bridgingTheGaps/Edip";
+import { ThemeContext, ThemeProvider } from "../ThemeContext";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const {setLight, setDark, theme } = useContext(ThemeContext);
+  const { setLight, setDark, theme } = useContext(ThemeContext);
 
   useEffect(() => {
-    // Simulate asset loading with a minimum duration of 2 seconds
     const loadAssets = () => {
       const loadTime = new Promise((resolve) => {
-        // Simulate asset loading time (e.g., images, fonts)
-        window.onload = () => resolve();
+        if (document.readyState === "complete") {
+          resolve();
+        } else {
+          window.addEventListener("load", resolve);
+        }
       });
 
-      const minimumDuration = new Promise(
-        (resolve) => setTimeout(resolve, 0) // Minimum 2 seconds
+      // Set a minimum duration of 2 seconds
+      const minimumDuration = new Promise((resolve) =>
+        setTimeout(resolve, 2000)
       );
 
       Promise.all([loadTime, minimumDuration]).then(() => setIsLoading(false));
@@ -32,47 +34,43 @@ const App = () => {
   }, []);
 
   return (
-    <ThemeProvider class='dark'>
-
-    <BrowserRouter basename="/">
-      <Routes>
-        <Route path='/' element={
-          <StyledApp isLoading={[isLoading]}>
-          {isLoading ? (
-            <Loader />
-          ) : (
-            <div className="overflow-auto h-screen w-screen scroll-smooth dark:bg-black bg-[#fafafa]">
-              <LandingPage />
-            </div>
-          )}
-        </StyledApp>
-        } />
-        <Route path='/project/infosys' element={<Main/>}/>
-        <Route path='/project/edip' element={<Edip/>}/>
-      </Routes>
-      
-    </BrowserRouter>
+    <ThemeProvider className="dark">
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <StyledApp isLoading={isLoading} theme={theme}>
+                {isLoading ? (
+                  <Loader />
+                ) : (
+                  <div className="overflow-auto h-screen w-screen scroll-smooth dark:bg-black bg-[#fafafa]">
+                    <LandingPage />
+                  </div>
+                )}
+              </StyledApp>
+            }
+          />
+          <Route path="/project/infosys" element={<Main />} />
+          <Route path="/project/edip" element={<Edip />} />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
 
 const StyledApp = styled.div`
   min-height: 100vh;
-  background: ${({ isLoading }) =>
+  background: ${({ isLoading, theme }) =>
     isLoading
-      ? "#000000" // Background during loading
-    : theme == 'dark' ? "linear-gradient(to right, #262b27 25%,#000000 80%)"
-    : "white"}; // Background on landing page
-  display: ${({ isLoading }) =>
-    isLoading
-      ? "flex" // Background during loading
-      : "block"};
+      ? "#000000"
+      : theme === "dark"
+      ? "linear-gradient(to right, #262b27 25%, #000000 80%)"
+      : "white"};
+  display: ${({ isLoading }) => (isLoading ? "flex" : "block")};
   justify-content: center;
   align-items: center;
-  transition: background 1s ease; // Smooth transition between backgrounds
+  transition: background 1s ease;
 `;
 
 export default App;
-
-// #363B37
-// #3C493D
