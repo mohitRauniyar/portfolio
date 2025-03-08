@@ -5,6 +5,7 @@ import Banner from "../../components/Banner";
 import ParticipationDetail from "../../components/ParticipationDetail";
 import Footer from "../../components/Footer"
 import { FaListAlt } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 
 export default function Main() {
   return (
@@ -21,6 +22,7 @@ export default function Main() {
 
             <div className="border-1 border-[#cfcfcf] dark:border-[#101110] bg-white dark:bg-black p-8 md:p-32">
               <Title title="Transforming Employee Training for Project Success" domain="Web Application"/>
+              <a href="https://github.com/L-DMS-V1/Batch-4" target="_blank" className="dark:text-black text-white p-4 px-8 my-16 text-2xl flex gap-8 rounded-lg bg-black dark:bg-white w-fit"><SiGithub /> View Code Repository</a>
               <div className="flex xl:flex-row flex-col-reverse md:gap-32 gap-16  pt-8 font-stretch-expanded">
                 <div className="">
                   <h2 className="text-xl lg:text-2xl font-semibold dark:text-white w-fit py-8">At-A-Glance</h2>
