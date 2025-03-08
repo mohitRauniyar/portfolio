@@ -27,7 +27,7 @@ export default function Main() {
                   <p className="lg:text-2xl text-xl p-4 pl-0  text-[#666964] dark:text-[#8d8d8d]">This is a sample line for the sample description of the project named no more disconnected dots: transforming employee training for project success. i will add a few more lines to check how this page is being affected by a lot of content. Wow, writing a bunch of nonsense is a lot harder than i thought i would be. the words just don't come out do they?</p>
                 </div>
                 <div className="">
-                  <iframe src="https://lottie.host/embed/6236096a-34bb-4e40-b7fa-f06b65e35e9c/McwtSbGhFB.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"></iframe>
+                  <iframe src="https://lottie.host/embed/a86cb229-d825-4eb6-adc9-dbfd1affd126/8Q9ONZq9g4.lottie" className="md:scale-125 h-[300px] lg:min-w-96 max-w-[600px] align-middle m-auto md:h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"></iframe>
                 </div>
               </div>
               <ParticipationDetail prop={{"participationType": "Team Project", "role":["Backend Developement", "Database Design"], "timeline": "October 2024 - December 2024"}}/>
@@ -55,7 +55,7 @@ export default function Main() {
                   <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8'>There was no structured system to ensure employees learned the right skills at the right time. This lack of alignment led to missed deadlines, inefficiencies, and inconsistent product quality.</p>
                 </div>
                 <div className="">
-                 <iframe src="https://lottie.host/embed/97ed338e-f9a5-4e23-9f2d-9d8a74e86489/lqQtzmumTL.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"></iframe>
+                 <iframe src="https://lottie.host/embed/3b98bb2b-d1d6-4cc0-b388-6faa83825706/ambFpckLUC.lottie" className="md:scale-125 h-[300px] lg:min-w-96 max-w-[600px] align-middle m-auto md:h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"></iframe>
                 </div>
               </div>
               </div>

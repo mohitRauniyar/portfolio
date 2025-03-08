@@ -27,8 +27,6 @@ export default function Edip() {
                       <p className="lg:text-2xl text-xl p-4 pl-0  text-[#666964] dark:text-[#8d8d8d]">The digital world continues to evolve at an unprecedented pace, yet a significant portion of the population—particularly the elderly—remains disconnected. "Bridging the Gaps" was conceived as a **digital inclusion platform** designed to empower older adults with digital literacy, enabling them to navigate technology confidently.</p>
                     </div>
                     <div className="">
-                      {/* <img src="/assets/noMoreDisconnectedDots/course_feedback.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"/> */}
-                      {/* <iframe src="https://lottie.host/embed/6236096a-34bb-4e40-b7fa-f06b65e35e9c/McwtSbGhFB.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"></iframe> */}
                       <iframe src="https://lottie.host/embed/091a66a6-5fb8-40b5-9909-ba58e042cfb7/xFXp24EfZV.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"></iframe>
                     </div>
                   </div>
@@ -57,9 +55,7 @@ export default function Edip() {
                       <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8'>There was no structured system to ensure employees learned the right skills at the right time. This lack of alignment led to missed deadlines, inefficiencies, and inconsistent product quality.</p>
                     </div>
                     <div className="">
-                      {/* <img src="/assets/noMoreDisconnectedDots/course_feedback.png" alt="" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"/> */}
                       <iframe src="https://lottie.host/embed/97ed338e-f9a5-4e23-9f2d-9d8a74e86489/lqQtzmumTL.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"></iframe>
-                      {/* <iframe src="https://lottie.host/embed/485adc8f-83c0-4b6a-83a4-e96929ee9694/qB4mUmmarw.lottie" className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"></iframe> */}
                     </div>
                   </div>
                   </div>
