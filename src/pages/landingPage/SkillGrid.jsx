@@ -78,10 +78,10 @@ const gridData = [
   
                 // Build border classes based on cell's true/false edges
                 const borders = [];
-                if (cell.top) borders.push("border-t-2 border-[#aaa] dark:border-[#222]");
-                if (cell.right) borders.push("border-r-2 border-[#aaa] dark:border-[#222]");
-                if (cell.bottom) borders.push("border-b-2 border-[#aaa] dark:border-[#222]");
-                if (cell.left) borders.push("border-l-2 border-[#aaa] dark:border-[#222]");
+                if (cell.top) borders.push("border-t-3 border-[#aaa] dark:border-[#444]");
+                if (cell.right) borders.push("border-r-3 border-[#aaa] dark:border-[#444]");
+                if (cell.bottom) borders.push("border-b-3 border-[#aaa] dark:border-[#444]");
+                if (cell.left) borders.push("border-l-3 border-[#aaa] dark:border-[#444]");
   
                 return (
                   <div
@@ -89,7 +89,7 @@ const gridData = [
                     className={`w-20 h-20 bg-transparent flex items-center p-2 justify-center ${borders.join(" ")}`}
                   >
                     {/* Conditionally render image if found */}
-                    {imageObj && <img src={`${import.meta.env.BASE_URL}${imageObj.imageLink}`} alt="Skill Icon" className="w-16 h-16 object-contain grayscale-100 hover:grayscale-0 hover:scale-110" />}
+                    {imageObj && <img src={`${import.meta.env.BASE_URL}${imageObj.imageLink}`} alt="Skill Icon" className="w-16 h-16 object-contain grayscale-100 hover:grayscale-0 hover:scale-110" loading='lazy'/>}
                   </div>
                 );
               })

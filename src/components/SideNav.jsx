@@ -13,7 +13,7 @@ export default function SideNav() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 h-screen z-20 border-r-1 border-[#424643] ${
+      className={`fixed bottom-0 left-0 h-screen z-20 border-r-1 border-[#cfcfcf] ${
         isCollapsed ? "w-20" : "w-48"
       } transition-all duration-300 bg-gradient-to-b bg-white dark:from-[#0E0E0E] dark:via-[#2B312D] dark:to-[#161616] md:flex hidden flex-row justify-center pb-12 pt-4 text-black dark:text-[#c9c3c3]`}
     >

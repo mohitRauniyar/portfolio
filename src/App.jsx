@@ -25,7 +25,7 @@ const App = () => {
 
       // Set a minimum duration of 2 seconds
       const minimumDuration = new Promise((resolve) =>
-        setTimeout(resolve, 2000)
+        setTimeout(resolve, 1000)
       );
 
       Promise.all([loadTime, minimumDuration]).then(() => setIsLoading(false));
