@@ -12,7 +12,8 @@ import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
 import { BiMinusCircle } from "react-icons/bi";
 import { TbCirclePlus } from "react-icons/tb";
 import { SiGithub } from "react-icons/si";
-
+import MobileView from "./MobileView";
+import TitleImageDescription from "../../components/TitleImageDescription";
 
 export default function Edip() {
   return (
@@ -34,8 +35,14 @@ export default function Edip() {
                 title="Movement Toward Inclusive Technology"
                 domain="Application"
               />
-              <a href="https://github.com/mohitRauniyar/Tutex" target="_blank" className="dark:text-black text-white p-4 px-8 my-16 text-2xl flex gap-8 rounded-lg bg-black dark:bg-white w-fit"><SiGithub /> View Code Repository</a>
-              
+              <a
+                href="https://github.com/mohitRauniyar/Tutex"
+                target="_blank"
+                className="dark:text-black text-white p-4 px-8 my-16 text-2xl flex gap-8 rounded-lg bg-black dark:bg-white w-fit"
+              >
+                <SiGithub /> View Code Repository
+              </a>
+
               <div className="flex xl:flex-row flex-col-reverse md:gap-32 gap-16  pt-8 font-stretch-expanded">
                 <div className="">
                   <h2 className="text-xl lg:text-2xl font-semibold dark:text-white w-fit py-8">
@@ -72,6 +79,63 @@ export default function Edip() {
                   timeline: "February 2025 - May 2025",
                 }}
               />
+
+              <div className="flex flex-col gap-32 my-32">
+                <TitleImageDescription imageUrl={"assets/bridgingTheGaps/PhonePeLandingPage.png"} altText={"abc"} title={"Personalized Learning Experience"} description={"Easily navigate through customized tutorials and modules tailored to individual learning needs."}/>
+                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <div className="p-8">
+                    <MobileView imageUrl={"assets/bridgingTheGaps/QRScan.png"} altText={""}/>
+                  </div>
+                  <div className="">
+                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                      Step-by-Step Interactive Guidance
+                    </h2>
+                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
+                      Receive real-time assistance with visual overlays and highlighted elements for smooth navigation.
+                    </p>
+                  </div>
+                </div>
+                <TitleImageDescription imageUrl={"assets/bridgingTheGaps/QRScan.png"} altText={"abc"} title={"Focus-Driven Highlighted Elements"} description={"Important sections are dynamically highlighted, making it easier to follow along and take action."}/>
+                
+                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    Unlimited Practice Sessions
+                  </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    {" "}
+                    Practice repeatedly with real-time feedback to master tasks
+                    at your own pace.
+                  </p>
+                </div>
+                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    Designed to meet WCAG standards, ensuring easy access for
+                    users with disabilities.
+                  </p>
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    Accessibility for All Users
+                  </h2>
+                </div>
+                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    Voice-Guided Assistance
+                  </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    {" "}
+                    Get audio prompts and guidance for easier navigation and
+                    better understanding.
+                  </p>
+                </div>
+                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    Learn in your preferred language for a more comfortable and
+                    inclusive experience.
+                  </p>
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    Multi-Language Support
+                  </h2>
+                </div>
+              </div>
             </div>
 
             <div className="border-1 border-[#cfcfcf] dark:border-[#101110] p-8 md:p-12"></div>
@@ -176,7 +240,7 @@ export default function Edip() {
                   an intuitive, supportive, and adaptive learning experience.
                 </p>
               </div>
-              
+
               <div className="-mt-8">
                 <p className="text-xl md:text-2xl text-black dark:text-white py-8">
                   Is there a good solution?
@@ -185,101 +249,215 @@ export default function Edip() {
                   Competitor Analysis
                 </p>
                 <p className="text-md lg:text-lg text-[#666964] dark:text-[#8d8d8d] p-12 xl:px-32 flex items-center">
-                  I started off by monitoring direct and indirect competitors that provide similar concepts to my product: walkthrough, training or hands-on practice. By doing so, I was able to gather ideas and solutions for improving the user experience by implementing different features.
+                  I started off by monitoring direct and indirect competitors
+                  that provide similar concepts to my product: walkthrough,
+                  training or hands-on practice. By doing so, I was able to
+                  gather ideas and solutions for improving the user experience
+                  by implementing different features.
                 </p>
                 <div className="flex flex-col my-16 xl:flex-row gap-8 justify-evenly items-stretch">
                   <div className="bg-[#eee] dark:bg-[#222] text-[#444] dark:text-[#cfcfcf] flex flex-col items-center justify-center xl:w-[32%] p-4">
-                    <img src="/assets/bridgingTheGaps/TechLifeUnity.png" alt="" className="w-20 h-20"/>
-                    <p className="text-center font-semibold my-4">Tech Life Unity</p>
+                    <img
+                      src="/assets/bridgingTheGaps/TechLifeUnity.png"
+                      alt=""
+                      className="w-20 h-20"
+                    />
+                    <p className="text-center font-semibold my-4">
+                      Tech Life Unity
+                    </p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No hands-on practice</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No multi-language support</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Only how-to text blogs</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Website-based deployment</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Includes pictures of interfaces</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Step-wise instructions</li>   
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>No account creation needed</li>   
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No hands-on practice
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No multi-language support
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Only how-to text blogs
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Website-based deployment
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Includes pictures of interfaces
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Step-wise instructions
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No account creation needed
+                      </li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-[#eee] dark:bg-[#222] text-[#444] dark:text-[#cfcfcf] flex flex-col items-center xl:w-[32%] p-4">
-                    <img src="/assets/bridgingTheGaps/seekho.png" alt="" className="w-20 h-20"/>
+                    <img
+                      src="/assets/bridgingTheGaps/seekho.png"
+                      alt=""
+                      className="w-20 h-20"
+                    />
                     <p className="text-center font-semibold my-4">Seekho App</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No hands-on practice</li>
-                      <li><BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Video-based courses</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No specific task-based tutorial</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Complex UPI AutoPay setup</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Skill-based courses</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Professional experienced teachers</li>   
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No hands-on practice
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Video-based courses
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No specific task-based tutorial
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Complex UPI AutoPay setup
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Skill-based courses
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Professional experienced teachers
+                      </li>
                     </ul>
                   </div>
-                  
+
                   <div className="bg-[#eee] dark:bg-[#222] text-[#444] dark:text-[#cfcfcf] flex flex-col items-center xl:w-[32%] p-4">
-                    <img src="/assets/bridgingTheGaps/youtube.png" alt="" className="w-20 h-20"/>
+                    <img
+                      src="/assets/bridgingTheGaps/youtube.png"
+                      alt=""
+                      className="w-20 h-20"
+                    />
                     <p className="text-center font-semibold my-4">Youtube</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No hands-on practice</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>No repetitive walkthroughs</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Too many options to choose from</li>
-                      <li><BiMinusCircle  className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2"/>Too many distractions</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Available in multiple languages</li>
-                      <li><TbCirclePlus  className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2"/>Available in many varieties</li>   
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No hands-on practice
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        No repetitive walkthroughs
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Too many options to choose from
+                      </li>
+                      <li>
+                        <BiMinusCircle className="inline text-red-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Too many distractions
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Available in multiple languages
+                      </li>
+                      <li>
+                        <TbCirclePlus className="inline text-green-600 text-2xl font-extrabold mr-2 -ml-2" />
+                        Available in many varieties
+                      </li>
                     </ul>
                   </div>
-                  
                 </div>
               </div>
 
               <div className="-mt-8">
-                
                 <p className="text-2xl md:text-4xl text-[#444] text-center dark:text-[#cfcfcf] py-8">
                   Prioritization Matrix
                 </p>
                 <p className="text-md lg:text-lg text-[#666964] dark:text-[#8d8d8d] p-12 xl:px-32 flex items-center">
-                  I used a 2 x 2 prioritization matrix to categorize the needs based on users' necessity and priority. MoSCoW model was used for this. Then, the Minimum Viable Product (MVP) features of the product was decided.
+                  I used a 2 x 2 prioritization matrix to categorize the needs
+                  based on users' necessity and priority. MoSCoW model was used
+                  for this. Then, the Minimum Viable Product (MVP) features of
+                  the product was decided.
                 </p>
                 <div className="flex flex-col my-16 xl:flex-row gap-0 justify-evenly items-stretch">
                   <div className="bg-[#83ec9a] text-[#444]  flex flex-col items-center justify-center xl:w-[25%] p-4">
                     <p className="text-center font-semibold my-4">Must Do</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Hands-On walkthrough modules</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Repetitive Practice Availability</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Progress Tracking</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Easy Navigation</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Minimalistic Design</li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Hands-On walkthrough modules
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Repetitive Practice Availability
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Progress Tracking
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Easy Navigation
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Minimalistic Design
+                      </li>
                     </ul>
                   </div>
                   <div className="bg-[#83ec9ad5] text-[#444]  flex flex-col items-center xl:w-[25%] p-4">
                     <p className="text-center font-semibold my-4">Should Do</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Account Management</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Multiple-language Support</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>High Accessibility (both audio and visual)</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Hint button</li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Account Management
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Multiple-language Support
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        High Accessibility (both audio and visual)
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Hint button
+                      </li>
                     </ul>
                   </div>
                   <div className="bg-[#83ec9aa9] text-[#444] dark:text-[#cfcfcf] flex flex-col items-center xl:w-[25%] p-4">
                     <p className="text-center font-semibold my-4">Could Do</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>AI Chat-Bot</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Journey Tracking</li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        AI Chat-Bot
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Journey Tracking
+                      </li>
                     </ul>
                   </div>
                   <div className="bg-[#83ec9a5b] text-[#444] dark:text-[#cfcfcf] flex flex-col items-center xl:w-[25%] p-4">
                     <p className="text-center font-semibold my-4">Won't Do</p>
                     <ul className="w-full p-4 flex flex-col gap-2">
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Gamification</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>AutoPay Subscription model</li>
-                      <li><FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2"/>Mobile Notifications</li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Gamification
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        AutoPay Subscription model
+                      </li>
+                      <li>
+                        <FaCheck className="inline text-green-600 text-2xl mr-2 -ml-2" />
+                        Mobile Notifications
+                      </li>
                     </ul>
                   </div>
-                  
-                  
-                  
                 </div>
               </div>
-
             </div>
 
             <div className="flex flex-col gap-28 border-1 border-[#cfcfcf] dark:border-[#101110] p-8 md:p-12"></div>
@@ -311,7 +489,8 @@ export default function Edip() {
               </div>
               <div>
                 <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] text-center mb-8">
-                These personas helped shape our design decisions, ensuring an inclusive and user-centric approach.
+                  These personas helped shape our design decisions, ensuring an
+                  inclusive and user-centric approach.
                 </p>
               </div>
             </div>
@@ -336,191 +515,138 @@ export default function Edip() {
               </div>
 
               <div className="flex flex-col xl:gap-64 gap-32">
-              <p className="text-xl md:text-2xl font-semibold text-black dark:text-white py-8 text-center">
+                <p className="text-xl md:text-2xl font-semibold text-black dark:text-white py-8 text-center">
                   Crazy-8s
                 </p>
                 <p className="text-lg lg:text-xl text-[#666964] dark:text-[#8d8d8d] xl:-my-48 -my-24 flex items-center">
-                  After having done research and narraowing down MVPs, I started stektching the ideas on a paper divided by eight containers. Allocating one minute per container, I could come up with various ideas and solutions for my product  
+                  After having done research and narraowing down MVPs, I started
+                  stektching the ideas on a paper divided by eight containers.
+                  Allocating one minute per container, I could come up with
+                  various ideas and solutions for my product
                 </p>
-              <div>
-
-              <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
-                   Understanding the Data
-                </p>
-                <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                  MySQL Database Design
-                </h2>
-                <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
-                   Entity-Relationship Diagram
-                </p>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  TO understand the storage of data ER diagram was made to understand the tables to be stored in mySQL database.  
-                </p>
-                <img
-                  src="/assets/bridgingTheGaps/erDiagram.png"
-                  alt=""
-                  className="w-full my-16 xl:scale-75"
-                />
-                <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                  Express Framework
-                </h2>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  {" "}
-                  Ensures a fast, robust-routing, and scalable backend.
-                </p>
-                <img
-                  src="/assets/noMoreDisconnectedDots/interface_design.png"
-                  alt=""
-                  className="w-full my-16"
-                  />
-                <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                  MVC Design Pattern
-                </h2>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  The MVC (Model-View-Controller) design pattern breaks an
-                  application into three parts: the Model (which handles data),
-                  the View (which is what users see), and the Controller (which
-                  connects the two). This makes it easier to work on each part
-                  separately, so you can update or fix things without messing up
-                  the whole app. MVC helps keep everything organized and
-                  improves the quality of the software.
-                </p>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-32 my-8 mt-32 flex items-center">
-                  {" "}
-                  A Role-based Access Control was added with three different
-                  roles: Admin, Manager and, Employee.
-                </p>
-                <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8 mt-32">
-                  Frontend Design
-                </p>
-                <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                  ReactJS
-                </h2>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  {" "}
-                  Delivers a smooth, interactive experience.
-                </p>
-                <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                  React Hot Toast
-                </h2>
-                <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  {" "}
-                  To display toast notifications in real-time, without requiring
-                  a full page reload.{" "}
-                </p>
-                  </div>
-                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  
-                  <div className="">
-                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                      Requesting for Course
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
-                      Managers can request training for employees based on
-                      project requirements.
-                    </p>
-                  </div>
-                  <div className="">
-                    <img
-                      src="/assets/noMoreDisconnectedDots/course_feedback.png"
-                      alt=""
-                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
-                    />
-                  </div>
-                </div>
-                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  <div className="">
-                    <img
-                      src="/assets/noMoreDisconnectedDots/course_assignment.png"
-                      alt=""
-                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
-                    />
-                  </div>
-                  <div className="">
-                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                      Modular Course Creation
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
-                      Admins can create new courses or assign existing ones to
-                      employees.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  <div className="">
-                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                      Easy tracking of courses
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
-                      Employees can view the courses assigned to them, complete
-                      the modules and track their progress.
-                    </p>
-                  </div>
-                  <div className="">
-                    <img
-                      src="/assets/noMoreDisconnectedDots/course_dashboard.png"
-                      alt=""
-                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
-                    />
-                  </div>
-                </div>
-                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  <div className="">
-                    <img
-                      src="/assets/noMoreDisconnectedDots/course_feedback_submission.png"
-                      alt=""
-                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
-                    />
-                  </div>
-                  <div className="">
-                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                      Feedback Oriented
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
-                      Employees can provide feedback on their assignments and
-                      Admins can view the feedback metrics to improve the course
-                      and view course performance.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  <div className="">
-                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                      Progress Tracking
-                    </h2>
-                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
-                      Employees and admins can easliy monitor course completion.
-                    </p>
-                  </div>
-                  <div className="">
-                    <img
-                      src="/assets/noMoreDisconnectedDots/course_feedback.png"
-                      alt=""
-                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
-                    />
-                  </div>
-                </div>
-                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
+                <div>
+                  <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
+                    Understanding the Data
+                  </p>
                   <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                    Role Based Access Control
+                    MySQL Database Design
+                  </h2>
+                  <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
+                    Entity-Relationship Diagram
+                  </p>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    TO understand the storage of data ER diagram was made to
+                    understand the tables to be stored in mySQL database.
+                  </p>
+                  <img
+                    src="/assets/bridgingTheGaps/erDiagram.png"
+                    alt=""
+                    className="w-full my-16 xl:scale-75"
+                  />
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    Express Framework
                   </h2>
                   <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
                     {" "}
-                    Ensures that each user type has access to only relevant
-                    actions.
-                  </p>
-                </div>
-                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
-                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                    Ensures only authorized users can access the system with the
-                    help of JWT authentication token.{" "}
+                    Built on top of Node.js, Express.js provides a lightweight
+                    and flexible framework to handle RESTful APIs and dynamic
+                    routing efficiently. It ensures seamless integration between
+                    backend services, enabling secure, high-speed communication
+                    for tutorial walkthroughs, practice modules, and
+                    assessments.
                   </p>
                   <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
-                    Secure Access
+                    React Native Web & Capacitor
                   </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    Leveraging React Native Web ensures a unified codebase
+                    across web and mobile platforms, while Capacitor bridges
+                    native APIs, enabling features like QR scanning, offline
+                    access, and secure storage. This seamless integration
+                    ensures a consistent, responsive experience for users across
+                    devices.
+                  </p>
+
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    MVC Design Pattern
+                  </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    The MVC (Model-View-Controller) design pattern breaks an
+                    application into three parts: the Model (which handles
+                    data), the View (which is what users see), and the
+                    Controller (which connects the two). This makes it easier to
+                    work on each part separately, so you can update or fix
+                    things without messing up the whole app. MVC helps keep
+                    everything organized and improves the quality of the
+                    software.
+                  </p>
+
+                  <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8 mt-32">
+                    Frontend Design
+                  </p>
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    ReactJS
+                  </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    {" "}
+                    Delivers a smooth, interactive experience.
+                  </p>
+                  <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                    React Native Web and Capacitor
+                  </h2>
+                  <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
+                    {" "}
+                    To convert the website to a packaged application to run on
+                    smartphones and other mobile devices. Capacitor to ensure
+                    seamless integration of native APIs (camera for QR scanning)
+                    without compromising app performance. Enabled offline access
+                    and sync mechanisms to ensure continuity of learning even in
+                    low-connectivity environments.{" "}
+                  </p>
                 </div>
-              </div>
-              <div>
+                <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <div className="xl:w-[50%]">
+                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                      Reusable Context Aware Components
+                    </h2>
+                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
+                      I focused on creating reusable, context-aware components
+                      to ensure a smooth and consistent learning experience
+                      across all tutorial modules. The Walkthrough Overlay
+                      dynamically highlights and pulsates relevant UI elements,
+                      guiding users step-by-step through the interface. These
+                      components were designed with flexibility in mind, making
+                      it easy to extend them across multiple tutorials without
+                      additional overhead.
+                    </p>
+                  </div>
+                  <div className="xl:w-[50%]">
+                    <MobileView
+                      imageUrl={"assets/bridgingTheGaps/PhonePeLandingPage.png"}
+                      altText={"Overlay Image"}
+                    />
+                  </div>
+                </div>
+                <div className="flex xl:flex-row flex-col-reverse lg:gap-16 xl:gap-32 gap-8 pt-8">
+                  <div className="">
+                    <img
+                      src="/assets/bridgingTheGaps/security.png"
+                      alt=""
+                      className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-contain object-contain xl:mt-0 mt-8"
+                    />
+                  </div>
+                  <div className="">
+                    <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
+                      Secure and Authenticated
+                    </h2>
+                    <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] my-8">
+                      Implemented JWT-based authentication with RBAC and
+                      enforced data validation at both client and server levels
+                      to ensure secure user data handling. 🔐
+                    </p>
+                  </div>
+                </div>
+
                 <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] text-center my-32">
                   With this blueprint, we were ready to bring the platform to
                   life.
@@ -549,42 +675,42 @@ export default function Edip() {
 
               <div>
                 <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
-                   Understanding the user flow
+                  Understanding the user flow
                 </p>
                 <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
                   Use Case Diagram
                 </h2>
                 <p className="text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center">
-                  To get a better understanding of the journey of user in our application and understand dependencies, i crafted the usecase diagram considering a general tutorial course.
+                  To get a better understanding of the journey of user in our
+                  application and understand dependencies, i crafted the usecase
+                  diagram considering a general tutorial course.
                 </p>
                 <img
                   src="/assets/bridgingTheGaps/usecaseDiagram.png"
                   alt=""
                   className="w-full my-16 xl:scale-75"
                 />
-                
+
                 <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">
                   Lo-Fi Wireframing
                 </h2>
                 <div className="flex flex-col items-center xl:hidden pt-8">
-                <img
-                  src="/assets/bridgingTheGaps/wireframe1.png"
-                  alt=""
-                  className="w-full xl:scale-75"
-                />
-                <img
-                  src="/assets/bridgingTheGaps/wireframe2.png"
-                  alt=""
-                  className="w-full xl:scale-75"
-                />
+                  <img
+                    src="/assets/bridgingTheGaps/wireframe1.png"
+                    alt=""
+                    className="w-full xl:scale-75"
+                  />
+                  <img
+                    src="/assets/bridgingTheGaps/wireframe2.png"
+                    alt=""
+                    className="w-full xl:scale-75"
+                  />
                 </div>
                 <img
                   src="/assets/bridgingTheGaps/fullWireframe.png"
                   alt=""
                   className="w-full my-16 xl:block hidden"
                 />
-
-                
               </div>
               <div className="lg:my-16">
                 <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8"></p>
@@ -600,8 +726,7 @@ export default function Edip() {
               </div>
 
               <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] mt-32 text-center">
-                A company where employees learn what they need, exactly when
-                they need it.
+              The development of Bridging the Gaps followed an Agile Scrum methodology, structured into six iterative sprints over twelve weeks. Each sprint focused on refining a specific module of the platform, incorporating continuous user feedback to enhance usability.
               </p>
             </div>
 
@@ -613,12 +738,12 @@ export default function Edip() {
                   05. Reflection
                 </h1>
                 <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] text-center">
-                  No More Disconnected Dots.
+                  Bridging The Gaps
                 </p>
               </div>
               <div>
                 <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] text-center mb-8">
-                  Lessons, Challenges & The Road Ahead
+                As the world continues to digitize, initiatives like this play a crucial role in ensuring that no one is left behind. <strong><i>Tutex</i></strong> is a testament to the power of human-centered technology—not just in closing the digital divide, but in building a more inclusive, connected world.
                 </p>
               </div>
               <p className="text-md md:text-xl font-semibold text-black dark:text-white py-8">
@@ -685,8 +810,7 @@ export default function Edip() {
               </div>
               <div>
                 <p className="text-lg lg:text-2xl text-[#666964] dark:text-[#8d8d8d] text-center my-32">
-                  With the final version deployed, the platform transformed the
-                  way training happens inside the company.
+                By continuously evolving, <strong><i>Tutex</i></strong> aspires to be a long-term solution in bridging the digital divide for individuals worldwide.
                 </p>
               </div>
             </div>
