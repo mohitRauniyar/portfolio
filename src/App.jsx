@@ -10,7 +10,7 @@ import { ThemeContext, ThemeProvider } from "../ThemeContext";
 import About from "./pages/About/About";
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const { setLight, setDark, theme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -25,10 +25,10 @@ const App = () => {
 
       // Set a minimum duration of 2 seconds
       const minimumDuration = new Promise((resolve) =>
-        setTimeout(resolve, 1000)
+        setTimeout(resolve, 800)
       );
 
-      Promise.all([loadTime, minimumDuration]).then(() => setIsLoading(false));
+      Promise.all([loadTime, minimumDuration]).then(() => setLoading(false));
     };
 
     loadAssets();
@@ -41,8 +41,8 @@ const App = () => {
           <Route
             path="/"
             element={
-              <StyledApp isLoading={isLoading} theme={theme}>
-                {isLoading ? (
+              <StyledApp loading={loading} theme={theme}>
+                {loading ? (
                   <Loader />
                 ) : (
                   <div className="overflow-auto h-screen w-screen scroll-smooth dark:bg-black bg-[#fafafa]">
@@ -63,13 +63,13 @@ const App = () => {
 
 const StyledApp = styled.div`
   min-height: 100vh;
-  background: ${({ isLoading, theme }) =>
-    isLoading
+  background: ${({ loading, theme }) =>
+    loading
       ? "#000000"
       : theme === "dark"
       ? "linear-gradient(to right, #262b27 25%, #000000 80%)"
       : "white"};
-  display: ${({ isLoading }) => (isLoading ? "flex" : "block")};
+  display: ${({ loading }) => (loading ? "flex" : "block")};
   justify-content: center;
   align-items: center;
   transition: background 1s ease;

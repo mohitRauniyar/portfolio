@@ -26,7 +26,7 @@ export default function Main() {
               <div className="flex xl:flex-row flex-col-reverse md:gap-32 gap-16  pt-8 font-stretch-expanded">
                 <div className="">
                   <h2 className="text-xl lg:text-2xl font-semibold dark:text-white w-fit py-8">At-A-Glance</h2>
-                  <p className="lg:text-2xl text-xl p-4 pl-0  text-[#666964] dark:text-[#8d8d8d]">This is a sample line for the sample description of the project named no more disconnected dots: transforming employee training for project success. i will add a few more lines to check how this page is being affected by a lot of content. Wow, writing a bunch of nonsense is a lot harder than i thought i would be. the words just don't come out do they?</p>
+                  <p className="lg:text-2xl text-xl p-4 pl-0  text-[#666964] dark:text-[#8d8d8d]">SkillMatrix is a comprehensive platform for managing employee training and skill development. The system ensures seamless training management with role-based access and real-time tracking. With SkillMatrix, organizations can efficiently upskill their workforce and monitor growth.</p>
                 </div>
                 <div className="">
                   <iframe src="https://lottie.host/embed/a86cb229-d825-4eb6-adc9-dbfd1affd126/8Q9ONZq9g4.lottie" className="md:scale-125 h-[300px] lg:min-w-96 max-w-[600px] align-middle m-auto md:h-full w-full xl:object-cover object-contain xl:mt-0 mt-8"></iframe>
@@ -62,7 +62,7 @@ export default function Main() {
               </div>
               </div>
               <div className="lg:my-16">
-                <p className='text-md md:text-xl font-semibold text-black dark:text-white py-8'>The Oppurtunity</p>
+                <p className='text-md md:text-xl font-semibold text-black dark:text-white py-8'>The Opportunity</p>
                 <div className="flex xl:flex-row flex-col lg:gap-16 xl:gap-32 gap-8 pt-8">
                   <h2 className="text-3xl lg:text-5xl font-semibold dark:text-white w-fit py-8">Employee Training Platform</h2>
                   <p className='text-xl lg:text-2xl text-[#666964] dark:text-[#8d8d8d] xl:my-8 flex items-center'>Build a centralized Employee Training Platform that seamlessly connects learning to project needs.</p>

@@ -2,6 +2,7 @@ import React from "react";
 import ProjectTitle from "./ProjectTitle";
 import Technology from "./Technology";
 import { Link } from "react-router-dom";
+import MobileView from "../bridgingTheGaps/MobileView";
 export default function Projects() {
   return (
     <div className="flex flex-col" id='craft'>
@@ -37,7 +38,9 @@ export default function Projects() {
         <div className="border-y-1 border-[#cfcfcf] dark:border-[#101110] md:p-28 p-8 bg-white dark:bg-black">
           <ProjectTitle title="Bridging The Gap" domain="Application" />
           <div className="flex flex-wrap flex-col-reverse md:flex-row justify-between gap-12 py-8 mt-16">
-            <img src="assets/noMoreDisconnectedDots/course_assignment.png" alt="" loading="lazy" className="lg:w-[55%] "/>
+            <div className="lg:w-[55%] overflow-hidden bg-[#f2f2f2] dark:bg-[#111] p-8">
+              <MobileView imageUrl="assets/bridgingTheGaps/login.png"/>
+            </div>
             <div className="flex flex-col lg:gap-8 gap-4 lg:w-[25%] w-full">
               <Technology
                 props={[

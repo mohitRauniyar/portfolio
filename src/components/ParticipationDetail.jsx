@@ -12,8 +12,8 @@ export default function ParticipationDetail({prop}) {
         <h3 className="text-2xl text-black dark:text-white mb-4 md:border-l-2 border-red-500 md:pl-8">
           My Role
         </h3>
-        {prop.role.map(element => (
-            <p className="text-lg text-[#666964] dark:text-[#8d8d8d] md:pl-8">
+        {prop.role.map((element,index) => (
+            <p key={index} className="text-lg text-[#666964] dark:text-[#8d8d8d] md:pl-8">
             {element}
           </p>
         ))}
