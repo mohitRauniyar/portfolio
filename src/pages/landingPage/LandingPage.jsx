@@ -12,7 +12,7 @@ export default function LandingPage() {
       <SideNav/>
       <BottomNav/>
     
-      <div className="md:pl-20 flex flex-col w-full">
+      <div className="md:pl-16 flex flex-col w-full">
         <Hero/>
         <div className="flex justify-center w-full">
         <Content/>

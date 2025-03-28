@@ -22,7 +22,7 @@ export default function Edip() {
       <SideNav />
       <BottomNav/>
       <div className="flex justify-center w-full bg-[#fafafa] dark:bg-[#000]">
-        <div className="w-full md:w-7xl md:ml-20 flex flex-col scroll-smooth">
+        <div className="w-full md:w-7xl md:ml-16 flex flex-col scroll-smooth">
           <div className="flex flex-col">
             <BannerWithMobileView
               imageLinks={[

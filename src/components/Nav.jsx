@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <StyledWrapper className="max-w-fit fixed right-4 top-5 scale-85 z-50 hidden sm:block">
+    <StyledWrapper className="max-w-fit fixed right-4 top-5 scale-75 z-50 hidden sm:block">
       <div className="menu bg-[#d3ebc9] dark:bg-[#1a1a1a] shadow-lg">
         <a href="#hero" className="link text-black dark:text-white before:bg-white dark:before:bg-[#262626]" onClick={(e) => handleScroll(e, "hero")}>
           <span className="link-icon">
