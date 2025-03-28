@@ -14,11 +14,13 @@ import { TbCirclePlus } from "react-icons/tb";
 import { SiGithub } from "react-icons/si";
 import MobileView from "./MobileView";
 import TitleImageDescription from "../../components/TitleImageDescription";
+import BottomNav from "../../components/BottomNav";
 
 export default function Edip() {
   return (
     <>
       <SideNav />
+      <BottomNav/>
       <div className="flex justify-center w-full bg-[#fafafa] dark:bg-[#000]">
         <div className="w-full md:w-7xl md:ml-20 flex flex-col scroll-smooth">
           <div className="flex flex-col">

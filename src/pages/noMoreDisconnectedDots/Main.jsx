@@ -6,11 +6,13 @@ import ParticipationDetail from "../../components/ParticipationDetail";
 import Footer from "../../components/Footer"
 import { FaListAlt } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
+import BottomNav from "../../components/BottomNav";
 
 export default function Main() {
   return (
     <>
       <SideNav />
+      <BottomNav/>
       <div className="flex justify-center w-full bg-[#fafafa] dark:bg-[#000]">
         <div className="w-full md:w-7xl md:ml-20 flex flex-col scroll-smooth">
           <div className="flex flex-col">

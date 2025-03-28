@@ -94,6 +94,7 @@ const CertificateCard = ({provider,  title, image, description }) => {
 export default function ProfileCard() {
   return (
     <div className="border-1 border-[#cfcfcf] dark:border-[#101110] bg-white dark:bg-black p-8 md:p-32">
+      {/* <BottomNav/> */}
       <div className="flex xl:flex-row flex-col-reverse gap-16 mb-16 py-8 font-stretch-expanded">
         <div>
           <h1 className="text-2xl lg:text-4xl font-semibold dark:text-white w-fit py-8">
@@ -107,7 +108,7 @@ export default function ProfileCard() {
         <div className="">
           <iframe
             src="https://lottie.host/embed/196969de-713f-4b05-abb7-ee12d9b0ee8b/WXLgkii3Ct.lottie"
-            className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8 scale-150"
+            className="lg:min-w-96 max-w-[600px] align-middle m-auto h-full w-full xl:object-cover object-contain xl:mt-0 mt-8 md:scale-150"
           ></iframe>
         </div>
       </div>

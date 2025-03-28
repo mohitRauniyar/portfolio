@@ -8,6 +8,7 @@ import Main from "./pages/noMoreDisconnectedDots/Main";
 import Edip from "./pages/bridgingTheGaps/Edip";
 import { ThemeContext, ThemeProvider } from "../ThemeContext";
 import About from "./pages/About/About";
+import BottomNav from "./components/BottomNav";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -47,6 +48,7 @@ const App = () => {
                 ) : (
                   <div className="overflow-auto h-screen w-screen scroll-smooth dark:bg-black bg-[#fafafa]">
                     <LandingPage />
+                    
                   </div>
                 )}
               </StyledApp>
