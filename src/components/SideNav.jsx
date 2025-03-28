@@ -128,7 +128,7 @@ export default function SideNav() {
         {/* Theme Toggle */}
         <div
           className={`flex ${
-            isCollapsed ? "flex-col gap-8" : "flex-row justify-evenly"
+            isCollapsed ? "flex-col gap-8" : "flex-row justify-between gap-12"
           } text-black dark:text-white text-2xl`}
         >
           <motion.div
